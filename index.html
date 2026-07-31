@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Manga-Neuheiten bündelt aktuelle und kommende deutschsprachige Manga-Veröffentlichungen von altraverse, TOKYOPOP und Carlsen Manga.">
+    <meta name="theme-color" content="#f7f4ed">
+    <meta property="og:title" content="Manga-Neuheiten">
+    <meta property="og:description" content="Aktuelle und kommende deutschsprachige Manga-Veröffentlichungen auf einen Blick.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <title>Manga-Neuheiten – Neue Manga auf einen Blick</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/app.js" defer></script>
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Manga-Neuheiten Startseite">
+          <span class="brand-mark" aria-hidden="true">M</span>
+          <span>Manga-Neuheiten</span>
+        </a>
+        <nav class="site-nav" aria-label="Hauptnavigation">
+          <a href="index.html" aria-current="page">Start</a>
+          <a href="new-releases.html">Neuerscheinungen</a>
+          <a href="preview.html">Vorschau</a>
+          <a href="publishers.html">Verlage</a>
+          <a href="about.html">Über das Projekt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main" id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Deutschsprachige Manga-Releases</p>
+          <h1 id="hero-title">Manga-<br>Neuheiten</h1>
+          <p>Eine klare Übersicht über aktuelle und kommende Manga-Veröffentlichungen – zum Entdecken neuer Bände und neuer Reihen.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="new-releases.html">Neuheiten entdecken →</a>
+            <a class="button ghost" href="about.html">Mehr über das Projekt</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-hidden="true">
+          <div class="hero-glyph">新</div>
+        </div>
+      </section>
+
+      <aside class="notice" aria-label="Hinweis zum Datenbestand">
+        <p><strong>Aktuell erfasste Verlage: altraverse, TOKYOPOP und Carlsen Manga.</strong> Der Datenbestand wird schrittweise erweitert und erhebt keinen Anspruch auf Vollständigkeit.</p>
+      </aside>
+
+      <section class="section" aria-labelledby="current-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Jetzt erschienen</p>
+            <h2 id="current-heading">Neuheiten im <span data-current-month-label>aktuellen Monat</span></h2>
+          </div>
+          <a class="text-link" href="new-releases.html">Alle ansehen →</a>
+        </div>
+        <div class="release-grid" id="current-releases" data-release-container>
+          <div class="loading-state"><p>Veröffentlichungen werden geladen …</p></div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="upcoming-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Demnächst</p>
+            <h2 id="upcoming-heading">Kommende Veröffentlichungen</h2>
+          </div>
+          <a class="text-link" href="preview.html">Nächsten Monat ansehen →</a>
+        </div>
+        <div class="release-grid" id="upcoming-releases" data-release-container>
+          <div class="loading-state"><p>Veröffentlichungen werden geladen …</p></div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="first-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Neu anfangen</p>
+            <h2 id="first-heading">Neue Reihen &amp; Band 1</h2>
+          </div>
+          <a class="text-link" href="new-releases.html">Alle Neuheiten →</a>
+        </div>
+        <div class="release-grid" id="first-volumes" data-release-container>
+          <div class="loading-state"><p>Veröffentlichungen werden geladen …</p></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© <span data-current-year>2026</span> RealityForge GbR · Datenbestand ohne Anspruch auf Vollständigkeit.</p>
+        <nav class="footer-nav" aria-label="Servicenavigation">
+          <a href="contact.html">Kontakt</a>
+          <a href="imprint.html">Impressum</a>
+          <a href="privacy.html">Datenschutz</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

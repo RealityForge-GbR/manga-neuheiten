@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Deutschsprachige Manga-Neuerscheinungen nach Monat, Verlag, Titel und Preis durchsuchen und sortieren.">
+    <meta name="theme-color" content="#f7f4ed">
+    <meta property="og:title" content="Neuerscheinungen | Manga-Neuheiten">
+    <meta property="og:description" content="Manga-Neuerscheinungen filtern, durchsuchen und sortieren.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <title>Neuerscheinungen | Manga-Neuheiten</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/app.js" defer></script>
+  </head>
+  <body data-page="releases">
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Manga-Neuheiten Startseite"><span class="brand-mark" aria-hidden="true">M</span><span>Manga-Neuheiten</span></a>
+        <nav class="site-nav" aria-label="Hauptnavigation">
+          <a href="index.html">Start</a>
+          <a href="new-releases.html" aria-current="page">Neuerscheinungen</a>
+          <a href="preview.html">Vorschau</a>
+          <a href="publishers.html">Verlage</a>
+          <a href="about.html">Über das Projekt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main" id="main">
+      <header class="page-header">
+        <p class="eyebrow">Release-Kalender</p>
+        <h1>Neuerscheinungen</h1>
+        <p>Finde Manga nach Monat und Verlag oder suche direkt nach Titel, ISBN und Autor.</p>
+      </header>
+
+      <section aria-labelledby="filter-heading">
+        <h2 class="sr-only" id="filter-heading">Veröffentlichungen filtern</h2>
+        <div class="filter-panel">
+          <div class="field">
+            <label for="month-filter">Monat</label>
+            <select id="month-filter">
+              <option value="all">Alle Monate</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="release-search">Suche</label>
+            <input id="release-search" type="search" placeholder="Titel, ISBN oder Autor" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="publisher-filter">Verlag</label>
+            <select id="publisher-filter">
+              <option value="all">Alle Verlage</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="sort-filter">Sortierung</label>
+            <select id="sort-filter">
+              <option value="date-asc">Datum: früheste zuerst</option>
+              <option value="date-desc">Datum: neueste zuerst</option>
+              <option value="title-asc">Titel: A–Z</option>
+              <option value="price-asc">Preis: aufsteigend</option>
+              <option value="price-desc">Preis: absteigend</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="results-bar">
+          <p id="result-count" aria-live="polite">Veröffentlichungen werden geladen …</p>
+          <button class="button" id="reset-filters" type="button">Filter zurücksetzen</button>
+        </div>
+        <div class="release-grid" id="release-results" data-release-container>
+          <div class="loading-state"><p>Veröffentlichungen werden geladen …</p></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© <span data-current-year>2026</span> RealityForge GbR · Datenbestand ohne Anspruch auf Vollständigkeit.</p>
+        <nav class="footer-nav" aria-label="Servicenavigation"><a href="contact.html">Kontakt</a><a href="imprint.html">Impressum</a><a href="privacy.html">Datenschutz</a></nav>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://manga.realityforge.eu/sitemap.xml

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Details zu einer deutschsprachigen Manga-Veröffentlichung.">
+    <meta name="theme-color" content="#f7f4ed">
+    <meta property="og:title" content="Manga-Details | Manga-Neuheiten">
+    <meta property="og:description" content="Titel, Band, Verlag, Erscheinungsdatum, Preis, ISBN und weitere Details.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <title>Manga-Details | Manga-Neuheiten</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/app.js" defer></script>
+  </head>
+  <body data-page="detail">
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Manga-Neuheiten Startseite"><span class="brand-mark" aria-hidden="true">M</span><span>Manga-Neuheiten</span></a>
+        <nav class="site-nav" aria-label="Hauptnavigation">
+          <a href="index.html">Start</a>
+          <a href="new-releases.html">Neuerscheinungen</a>
+          <a href="preview.html">Vorschau</a>
+          <a href="publishers.html">Verlage</a>
+          <a href="about.html">Über das Projekt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main" id="main">
+      <div id="detail-loading" class="loading-state"><p>Details werden geladen …</p></div>
+      <article class="detail-shell" id="detail-content" hidden>
+        <div class="detail-cover" id="detail-cover" aria-label="Neutrale Cover-Darstellung"><span>MN</span></div>
+        <div class="detail-content">
+          <p class="eyebrow">Veröffentlichungsdetails</p>
+          <h1 id="detail-title">Titel</h1>
+          <p class="detail-subtitle" id="detail-subtitle"></p>
+          <dl class="detail-list">
+            <div><dt>Verlag</dt><dd id="detail-publisher"></dd></div>
+            <div><dt>Erscheinungsdatum</dt><dd id="detail-date"></dd></div>
+            <div><dt>Preis</dt><dd id="detail-price"></dd></div>
+            <div><dt>ISBN-13</dt><dd id="detail-isbn"></dd></div>
+            <div><dt>Autorinnen &amp; Autoren</dt><dd id="detail-authors"></dd></div>
+            <div><dt>Bindung</dt><dd id="detail-binding"></dd></div>
+            <div><dt>Umfang</dt><dd id="detail-pages"></dd></div>
+          </dl>
+          <section class="description" id="detail-description" hidden>
+            <h2>Beschreibung</h2>
+            <p id="detail-description-text"></p>
+          </section>
+          <div class="detail-actions">
+            <a class="button" href="new-releases.html">← Zurück zu den Neuerscheinungen</a>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© <span data-current-year>2026</span> RealityForge GbR · Datenbestand ohne Anspruch auf Vollständigkeit.</p>
+        <nav class="footer-nav" aria-label="Servicenavigation"><a href="contact.html">Kontakt</a><a href="imprint.html">Impressum</a><a href="privacy.html">Datenschutz</a></nav>
+      </div>
+    </footer>
+  </body>
+</html>
